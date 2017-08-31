@@ -13,9 +13,9 @@
 #         peek
 
 class Node:
-    def __init__(self, value, below = None):
+    def __init__(self, value, previous = None):
         self.value = value
-        self.previous = below
+        self.previous = previous
 
 class MyQueue:
     def__init__(self):
@@ -24,6 +24,7 @@ class MyQueue:
 
     def peek(self):
         # Return the next node.
+        while peek == 
         pass
     
     def dequeue(self):
