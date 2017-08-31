@@ -10,21 +10,30 @@ class MyQueue:
 
     def peek(self):
         # Return the next node.
-        while self.peek.next == value:
-            return value
+            return self.first
         pass
     
     def dequeue(self):
         # Return the next node and remove it from the queue.
-        while self.dequeue.next == value:
-            # Need to remove it here.
-            # What do I return?????
+        node_to_return = self.first
+
+        if node_to_return == self.last:
+            self.last = None
+            self.first = None
+        else:
+            self.first = self.first.previous
         pass
 
     def enqueue(self, value):
         # Add the new node to the end of the queue.
-        while self.enqueue.next == value:
-            return enqueue.last
+        new_node = Node(value)
+
+        if self.first == None and self.last == None:
+            self.first == new_node
+            self.last == new_node
+        else:
+            self.last.previous = new_node
+            self.last = new_node
         pass
 
 # Queues:
